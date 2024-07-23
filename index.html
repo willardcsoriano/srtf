@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRTF Scheduling Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <p class="head">Name: Willard Soriano <span class="align-right">Course: Modeling and Simulation Theory</span></p>
+    <p class="head">Section: CSS142_FOPI01_4Q2324 <span class="align-right">Activity: ASS2.1</span></p>
+    
+    <h1>Shortest-Remaining-Time-First Scheduling Simulation</h1>
+    
+    <section>
+        <h2>About the Simulation</h2>
+        <p>This simulation demonstrates the Shortest-Remaining-Time-First (SRTF) scheduling algorithm. SRTF is a preemptive version of the Shortest Job Next (SJN) scheduling algorithm. In this simulation, we have 5 processes with randomly generated burst times and unique arrival times ranging from 0 to 4.</p>
+    </section>
+
+    <section>
+        <h2>How the Algorithm Works</h2>
+        <p>The SRTF algorithm selects the process with the smallest remaining execution time to execute next. If a new process arrives with a shorter remaining time than the current process, the algorithm preempts the current process and schedules the new process. This ensures that the process with the shortest remaining time is always being executed.</p>
+    </section>
+
+    <button onclick="runSimulation()">Run Simulation</button>
+
+    <div id="result"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
